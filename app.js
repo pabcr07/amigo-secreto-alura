@@ -19,11 +19,26 @@ function agregarAmigo(){
 
 }
 
+function sortearAmigo(){
+
+    if(arregloAmigos.length > 0){
+        const cantidadAmigos = arregloAmigos.length
+        const idxASortear = Math.floor(Math.random() * (cantidadAmigos))
+        const amigoSorteado = arregloAmigos[idxASortear]
+        resultado.innerText = `El ganador del sorteo es ${amigoSorteado}`
+    }else{
+        alert("No hay amigos para sortear")
+    }
+
+}
+
+
 
 
     
 
     
+
 
 
 
